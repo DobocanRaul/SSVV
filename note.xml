@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entitati>
+    <nota IDStudent="1" IDTema="1">
+        <Nota>10.0</Nota>
+        <SaptamanaPredare>7</SaptamanaPredare>
+        <Feedback>done</Feedback>
+    </nota>
+    <nota IDStudent="id20" IDTema="id25">
+        <Nota>7.0</Nota>
+        <SaptamanaPredare>7</SaptamanaPredare>
+        <Feedback>feedback that makes sure the student understands!</Feedback>
+    </nota>
+    <nota IDStudent="1" IDTema="2">
+        <Nota>7.5</Nota>
+        <SaptamanaPredare>9</SaptamanaPredare>
+        <Feedback>done</Feedback>
+    </nota>
+    <nota IDStudent="20" IDTema="1">
+        <Nota>1.0</Nota>
+        <SaptamanaPredare>10</SaptamanaPredare>
+        <Feedback>10</Feedback>
+    </nota>
+    <nota IDStudent="20" IDTema="2">
+        <Nota>5.0</Nota>
+        <SaptamanaPredare>10</SaptamanaPredare>
+        <Feedback>10</Feedback>
+    </nota>
+    <nota IDStudent="20" IDTema="3">
+        <Nota>7.5</Nota>
+        <SaptamanaPredare>10</SaptamanaPredare>
+        <Feedback>10</Feedback>
+    </nota>
+    <nota IDStudent="id" IDTema="1">
+        <Nota>1.0</Nota>
+        <SaptamanaPredare>10</SaptamanaPredare>
+        <Feedback>10</Feedback>
+    </nota>
+    <nota IDStudent="id" IDTema="2">
+        <Nota>5.0</Nota>
+        <SaptamanaPredare>10</SaptamanaPredare>
+        <Feedback>10</Feedback>
+    </nota>
+    <nota IDStudent="303" IDTema="1">
+        <Nota>5.0</Nota>
+        <SaptamanaPredare>8</SaptamanaPredare>
+        <Feedback>bravo</Feedback>
+    </nota>
+    <nota IDStudent="2" IDTema="id25">
+        <Nota>1.0</Nota>
+        <SaptamanaPredare>10</SaptamanaPredare>
+        <Feedback>10</Feedback>
+    </nota>
+    <nota IDStudent="1" IDTema="id25">
+        <Nota>1.0</Nota>
+        <SaptamanaPredare>10</SaptamanaPredare>
+        <Feedback>10</Feedback>
+    </nota>
+</Entitati>
