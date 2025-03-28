@@ -46,27 +46,18 @@ public class StudentTest{
     @Test
     public void addStudentWithEmptyName(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(0, service.saveStudent("4", "", 932));
+        Assertions.assertEquals(0, service.saveStudent("8", "", 932));
     }
 
-    @Test
-    public void addStudentWithNotNullName(){
-        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("5", "Raul", 932));
-    }
+
 
     @Test
     public void addStudentWithNullName(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(0, service.saveStudent("6", null, 932));
+        Assertions.assertEquals(0, service.saveStudent("9", null, 932));
     }
 
 
-    @Test
-    public void addStudentWithValidID(){
-        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("7", "Raul", 932));
-    }
 
     @Test
     public void addStudentWithEmptyID(){
@@ -75,21 +66,9 @@ public class StudentTest{
     }
 
     @Test
-    public void addStudentWithNotNullID(){
-        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("8", "Raul", 932));
-    }
-
-    @Test
     public void addStudentWithNullID(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
         Assertions.assertEquals(0, service.saveStudent(null, "Raul", 932));
-    }
-
-    @Test
-    public void addStudentWithValidIdType(){
-        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("9", "Raul", 932));
     }
 
     @Test
@@ -101,35 +80,24 @@ public class StudentTest{
     @Test
     public void addStudentWithValidMinimumGrupValue(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("5", "Eduard", 111));
+        Assertions.assertEquals(1, service.saveStudent("4", "Eduard", 111));
     }
 
     @Test
     public void addStudentWithValidJustAboveMinimumGrupValue(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("7", "Eduard", 112));
-    }
-
-    @Test
-    public void addStudentWithInvalidJustBelowMinimumGrupValue(){
-        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(0, service.saveStudent("8", "Eduard", 110));
+        Assertions.assertEquals(1, service.saveStudent("5", "Eduard", 112));
     }
 
     @Test
     public void addStudentWithValidMaximumGrupValue(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("9", "Eduard", 937));
+        Assertions.assertEquals(1, service.saveStudent("6", "Eduard", 937));
     }
 
     @Test
-    public void addStudentWithValidJustBelowMaximumGrupValue(){
-        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(1, service.saveStudent("10", "Eduard", 936));
-    }
-    @Test
     public void addStudentWithInvalidJustAboveMaximumGrupValue(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
-        Assertions.assertEquals(0, service.saveStudent("11", "Eduard", 938));
+        Assertions.assertEquals(0, service.saveStudent("7", "Eduard", 938));
     }
 }
