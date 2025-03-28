@@ -31,9 +31,9 @@ public class Service {
         Student result = studentXmlRepo.save(student);
         System.out.println(result);
         if (result == null) {
-            return 1;
+            return 0;
         }
-        return 0;
+        return 1;
     }
 
     public int saveTema(String id, String descriere, int deadline, int startline) {
