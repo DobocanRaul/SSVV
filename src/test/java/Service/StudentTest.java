@@ -98,4 +98,38 @@ public class StudentTest{
         Assertions.assertEquals(0, service.saveStudent("Da", "Raul", 932));
     }
 
+    @Test
+    public void addStudentWithValidMinimumGrupValue(){
+        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        Assertions.assertEquals(1, service.saveStudent("5", "Eduard", 111));
+    }
+
+    @Test
+    public void addStudentWithValidJustAboveMinimumGrupValue(){
+        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        Assertions.assertEquals(1, service.saveStudent("7", "Eduard", 112));
+    }
+
+    @Test
+    public void addStudentWithInvalidJustBelowMinimumGrupValue(){
+        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        Assertions.assertEquals(0, service.saveStudent("8", "Eduard", 110));
+    }
+
+    @Test
+    public void addStudentWithValidMaximumGrupValue(){
+        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        Assertions.assertEquals(1, service.saveStudent("9", "Eduard", 937));
+    }
+
+    @Test
+    public void addStudentWithValidJustBelowMaximumGrupValue(){
+        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        Assertions.assertEquals(1, service.saveStudent("10", "Eduard", 936));
+    }
+    @Test
+    public void addStudentWithInvalidJustAboveMaximumGrupValue(){
+        Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        Assertions.assertEquals(0, service.saveStudent("11", "Eduard", 938));
+    }
 }
