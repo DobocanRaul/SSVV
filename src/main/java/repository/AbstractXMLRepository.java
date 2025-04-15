@@ -87,7 +87,7 @@ public abstract class AbstractXMLRepository<ID, E extends HasID<ID>> extends Abs
     @Override
     public E save(E entity) throws ValidationException {
         E result = super.save(entity);
-        if (result == null) {
+        if (result != null) {
             writeToXmlFile();
         }
         return result;

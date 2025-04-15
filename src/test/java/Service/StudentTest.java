@@ -26,7 +26,7 @@ public class StudentTest{
 
 
     @Test
-    public void addStudentWithValidGroup(){
+    public void ddStudentWithValidGroup(){
         Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
         Assertions.assertEquals(1, service.saveStudent("1", "Eduard", 932));
     }

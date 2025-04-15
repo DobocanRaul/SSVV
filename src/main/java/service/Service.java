@@ -45,7 +45,7 @@ public class Service {
         Tema tema = new Tema(id, descriere, deadline, startline);
         Tema result = temaXmlRepo.save(tema);
 
-        if (result == null) {
+        if (result != null) {
             return 1;
         }
         return 0;

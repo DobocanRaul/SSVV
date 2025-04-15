@@ -86,6 +86,7 @@ public class UI {
         int startline = scanner.nextInt();
 
         if (service.saveTema(id, descriere, deadline, startline) != 0) {
+            //
             System.out.println("Tema adaugata cu succes! \n");
         }
         else {
