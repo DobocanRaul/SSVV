@@ -31,15 +31,6 @@ public class WhiteBoxAddAssignmentTests {
     NotaXMLRepository fileRepository3 = new NotaXMLRepository(notaValidator, "note.xml");
     Service service = new Service(fileRepository1, fileRepository2, fileRepository3);
 
-    public static void clearFile(String filename) {
-        try (FileWriter fw = new FileWriter(filename, false)) {
-            // false = do not append, overwrite the file
-            fw.write(""); // Write nothing to effectively clear the file
-        } catch (IOException e) {
-            System.out.println("Eroare la stergerea continutului fisierului: " + e.getMessage());
-        }
-    }
-
     @BeforeEach
     void setup() {
         FileUtils.clearFile("testnou.xml");
